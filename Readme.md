@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Роман Адам](https://up.htmlacademy.ru/adaptive/25/user/1986525).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
