@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="img/logotype-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+                Главная
+              </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="catalog.html">
+                Фото и видео
+              </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+                Форма отзыва
+              </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+                HTML Academy
+              </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="first-screen">
+      <div class="first-screen__wrapper">
+        <div class="first-screen__header">
+          <img class="first-screen__header-text" src="./img/sedona-text.svg" width="229" height="39" alt="Надпись Седона.">
+          <div class="first-screen__header-divider divider"></div>
+        </div>
+        <div class="first-screen__text">
+          <h1 class="first-screen__text-header text-header">Фото и видео</h1>
+          <p class="first-screen__text-bottom text-bottom">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </div>
+    </section>
+    <section class="catalog-foto">
+      <h2 class="visually-hidden">Фотографии Седоны.</h2>
+      <div class="catalog-foto__wrapper">
+        <ul class="catalog-foto__list">
+          <li class="catalog-foto__item foto-item">
+            <img class="foto-item__image" src="./img/road.jpg" width="280" height="280" alt="Дорога и закат.">
+            <h3 class="foto-item__title">Неродные просторы</h3>
+            <p class="foto-item__author">Автор фото: Борис</p>
+            <div>
+              <svg class="foto-item__like-icon" aria-hidden="true" focusable="false" width="23" height="21" role="img" aria-label="like." xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m13 3.8-.7 3-.6 2.6h9.1v2.2l-3 7.3H8.4V8.4L13 3.8ZM2 10.5v8.4-8.4ZM13.9 0 6.9 7c-.4.2-.6.8-.6 1.4v10.5c0 1.2 1 2.1 2 2.1h9.5a2 2 0 0 0 1.9-1.3l3-7.4c.2-.2.2-.5.2-.8v-2h.1c0-1.2-1-2.2-2-2.2h-6.7l1-4.8v-.3c0-.4-.1-.8-.4-1.2l-1.1-1ZM4.2 8.4H0V21h4.2V8.4Z" />
+              </svg>
+              <span class="foto-item__like-amount">1350</span>
+            </div>
+          </li>
+          <li class="catalog-foto__item foto-item">
+            <img class="foto-item__image" src="./img/greenery.jpg" width="280" height="280" alt="Кактусы на фоне гор.">
+            <h3 class="foto-item__title">Местная растительность</h3>
+            <p class="foto-item__author">Автор фото: Сергей</p>
+            <div>
+              <svg class="foto-item__like-icon" aria-hidden="true" focusable="false" width="23" height="21" role="img" aria-label="like." xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m13 3.8-.7 3-.6 2.6h9.1v2.2l-3 7.3H8.4V8.4L13 3.8ZM2 10.5v8.4-8.4ZM13.9 0 6.9 7c-.4.2-.6.8-.6 1.4v10.5c0 1.2 1 2.1 2 2.1h9.5a2 2 0 0 0 1.9-1.3l3-7.4c.2-.2.2-.5.2-.8v-2h.1c0-1.2-1-2.2-2-2.2h-6.7l1-4.8v-.3c0-.4-.1-.8-.4-1.2l-1.1-1ZM4.2 8.4H0V21h4.2V8.4Z" />
+              </svg>
+              <span class="foto-item__like-amount">143</span>
+            </div>
+          </li>
+          <li class="catalog-foto__item foto-item">
+            <img class="foto-item__image" src="./img/road-north.jpg" width="280" height="280" alt="Дорога в лесу.">
+            <h3 class="foto-item__title">Дорога на север</h3>
+            <p class="foto-item__author">Автор фото: Петр</p>
+            <div>
+              <svg class="foto-item__like-icon" aria-hidden="true" focusable="false" width="23" height="21" role="img" aria-label="like." xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m13 3.8-.7 3-.6 2.6h9.1v2.2l-3 7.3H8.4V8.4L13 3.8ZM2 10.5v8.4-8.4ZM13.9 0 6.9 7c-.4.2-.6.8-.6 1.4v10.5c0 1.2 1 2.1 2 2.1h9.5a2 2 0 0 0 1.9-1.3l3-7.4c.2-.2.2-.5.2-.8v-2h.1c0-1.2-1-2.2-2-2.2h-6.7l1-4.8v-.3c0-.4-.1-.8-.4-1.2l-1.1-1ZM4.2 8.4H0V21h4.2V8.4Z" />
+              </svg>
+              <span class="foto-item__like-amount">96</span>
+            </div>
+          </li>
+          <li class="catalog-foto__item foto-item">
+            <img class="foto-item__image" src="./img/devils-bridge-catalog.jpg" width="280" height="280" alt="Дорога и закат.">
+            <h3 class="foto-item__title">Мост дьявола</h3>
+            <p class="foto-item__author">Автор фото: Антон</p>
+            <div>
+              <svg class="foto-item__like-icon" aria-hidden="true" focusable="false" width="23" height="21" role="img" aria-label="like." xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m13 3.8-.7 3-.6 2.6h9.1v2.2l-3 7.3H8.4V8.4L13 3.8ZM2 10.5v8.4-8.4ZM13.9 0 6.9 7c-.4.2-.6.8-.6 1.4v10.5c0 1.2 1 2.1 2 2.1h9.5a2 2 0 0 0 1.9-1.3l3-7.4c.2-.2.2-.5.2-.8v-2h.1c0-1.2-1-2.2-2-2.2h-6.7l1-4.8v-.3c0-.4-.1-.8-.4-1.2l-1.1-1ZM4.2 8.4H0V21h4.2V8.4Z" />
+              </svg>
+              <span class="foto-item__like-amount">254</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="catalog-video">
+      <h2 class="visually-hidden">Видео о Седоне.</h2>
+      <div class="catalog-video__wrapper">
+        <ul class="catalog-video__list">
+          <li class="catalog-video__item video-item">
+            <h3 class="video-item__text-header text-header">Все еще сомневаетесь?</h3>
+            <p class="video-item__text-bottom text-bottom">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <img class="foto-item__image" src="./img/video-sedona.jpg" width="280" height="177" alt="Видео о Седоне.">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <section class="main-footer__hashtag">
+        <h2 class="visually-hidden">Хэштэг "Посети Седону".</h2>
+        <span class="main-footer__hashtag-text">#visitSEDONA</span>
+      </section>
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях.</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-footer__copyright copyright">
+        <h2 class="visually-hidden">Сайт сделан в HTML Академии.</h2>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
