@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page__container">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="img/logotype-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+    <a>
+      <img class="main-header__logo logo" src="img/logotype-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+      <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+        <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item site-list__item--active">
             <a>
                 Главная
@@ -35,7 +36,6 @@
               </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -150,5 +150,6 @@
       </section>
     </div>
   </footer>
+</div>
 </body>
 </html>
