@@ -7,14 +7,14 @@
 </head>
 
 <body class="page__body">
+  <div class="page__wrapper">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="logo"  src="img/logotype-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
+    <a>
+      <img class="main-header__logo logo" src="img/logotype-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+      <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+        <ul class="main-nav__list site-list visually-hidden">
           <li class="site-list__item">
             <a>
                 Главная
@@ -36,7 +36,6 @@
               </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -146,31 +145,35 @@
     </form>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <section class="main-footer__hashtag">
-        <h2 class="visually-hidden">Хэштэг "Посети Седону".</h2>
-        <span class="main-footer__hashtag-text">#visitSEDONA</span>
-      </section>
-      <section class="main-footer__social social">
-        <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-          </li>
-        </ul>
-      </section>
-      <section class="main-footer__copyright copyright">
-        <h2 class="visually-hidden">Сайт сделан в HTML Академии.</h2>
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-      </section>
-    </div>
-  </footer>
+    <section class="main-footer__hashtag">
+      <h2 class="visually-hidden">Хэштэг "Посети Седону".</h2>
+      <span class="main-footer__hashtag-text">#visitSEDONA</span>
+    </section>
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Мы в социальных сетях.</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
+        </li>
+      </ul>
+    </section>
+    <section class="main-footer__copyright copyright">
+      <h2 class="visually-hidden">Сайт сделан в HTML Академии.</h2>
+      <a class="copyright__link" href="https://htmlacademy.ru">   
+      <b class="copyright__text">Разработано </b>
+        <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="htmlacademy" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        </svg>
+      <span class="visually-hidden">HTML Academy.</span>
+      </a>
+    </section>
+</footer>
+</div>
 </body>
 </html>
