@@ -3,12 +3,21 @@
   position: absolute;
   top: 0;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-top: -96px;
+  }
 }
 
 .main-nav__toggle {
   margin: 17px 21px 17px auto;
   width: 23px;
   height: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {

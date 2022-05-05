@@ -6,11 +6,31 @@
   background-repeat: no-repeat;
   padding-top: 90px;
   padding-bottom: 1px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+  }
 }
 
 .first-screen__header-text {
   display: block;
   margin: 0 auto 84px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459.5px;
+    height: 350px;
+    margin-bottom: 89px;
+  }
 }
 
 .first-screen__header-divider {
