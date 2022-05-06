@@ -39,9 +39,25 @@
 }
 
 .first-screen__text-heading {
-  margin: 32px auto 35px;
+  margin: 35px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 47.5px auto 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+  }
 }
 
 .first-screen__text-bottom {
   margin: 0 auto 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }

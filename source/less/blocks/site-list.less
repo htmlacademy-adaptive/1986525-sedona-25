@@ -10,8 +10,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: transparent;
+    margin-left: 1.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
