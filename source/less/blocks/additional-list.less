@@ -6,6 +6,10 @@
   background-color: #ffffff;
   list-style-type: none;
   padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    flex-flow: row;
+  }
 }
 
 .additional-list__item {
@@ -15,6 +19,14 @@
   grid-template-areas:
     "grid-icon grid-title"
     "grid-icon grid-description";
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    grid-template-areas:
+      "grid-icon"
+      "grid-title"
+      "grid-description";
+  }
 }
 
 .additional-list__icon() {
@@ -23,21 +35,49 @@
   background-position: top 22px left;
   background-size: auto;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .additional-list__icon-home {
   .additional-list__icon;
   background-image: url("../img/icon-home.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+    background-position: top;
+    background-size: 75px 78px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .additional-list__icon-food {
   .additional-list__icon;
   background-image: url("../img/icon-food.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+    background-position: center left;
+    background-size: 77px 79px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .additional-list__icon-gift {
   .additional-list__icon;
   background-image: url("../img/icon-gift.svg");
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+    background-position: top;
+    background-size: 78px 78px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .additional-list__title {
