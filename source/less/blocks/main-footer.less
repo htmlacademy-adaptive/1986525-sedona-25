@@ -1,5 +1,16 @@
 .main-footer {
-  padding: 34px 0 23px;
+  padding: 40px 0 23px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 36px 60px 36px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 118px 36px 104px;
+  }
 }
 
 .main-footer__hashtag,
@@ -17,4 +28,12 @@
   margin: -1px auto 1px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin: 5px 0 0 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 3px 0 0 -2px;
+  }
 }

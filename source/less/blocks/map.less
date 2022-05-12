@@ -1,3 +1,13 @@
 .map__photo {
+  display: block;
   object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
+

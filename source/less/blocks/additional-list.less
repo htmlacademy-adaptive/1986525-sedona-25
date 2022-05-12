@@ -9,7 +9,12 @@
 
   @media (min-width: @tablet-width) {
     flex-flow: row;
+    padding-bottom: 60px;
   }
+}
+
+.additional-list__description-br {
+  display: none;
 }
 
 .additional-list__item {
@@ -20,12 +25,62 @@
     "grid-icon grid-title"
     "grid-icon grid-description";
 
+  &:nth-child(1) {
+    @media (min-width: @tablet-width) {
+      .additional-list__description {
+        width: 180px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      .additional-list__description {
+        width: 305px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+      & .additional-list__description {
+        width: 154px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      .additional-list__description {
+        width: 292px;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: @tablet-width) {
+      & .additional-list__description {
+        width: 192px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      .additional-list__description {
+        width: 244px;
+      }
+
+      .additional-list__description-br {
+        display: block;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 256px;
     grid-template-areas:
       "grid-icon"
       "grid-title"
       "grid-description";
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
 
@@ -48,7 +103,7 @@
   @media (min-width: @tablet-width) {
     margin-top: 56px;
     background-position: top;
-    background-size: 75px 78px;
+    background-size: 77px 78px;
     width: 80px;
     height: 80px;
   }
@@ -61,8 +116,8 @@
   @media (min-width: @tablet-width) {
     margin-top: 56px;
     background-position: center left;
-    background-size: 77px 79px;
-    width: 80px;
+    background-size: 76px 78px;
+    width: 78px;
     height: 80px;
   }
 }
@@ -73,9 +128,9 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 56px;
-    background-position: top;
-    background-size: 78px 78px;
-    width: 80px;
+    background-position: bottom 2px left 1px;
+    background-size: 79.5px 78.5px;
+    width: 85px;
     height: 80px;
   }
 }
@@ -89,10 +144,21 @@
   line-height: 26px;
   color: #000000;
   grid-area: grid-title;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin: 22px 0 23px;
+    font-size: 21px;
+  }
 }
 
 .additional-list__description {
   margin: 0 auto;
   text-transform: uppercase;
   grid-area: grid-description;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    min-height: 63px;
+  }
 }

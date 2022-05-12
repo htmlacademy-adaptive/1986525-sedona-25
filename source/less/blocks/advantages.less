@@ -18,6 +18,11 @@
   padding: 0;
   background-color: #81b3d2;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__title {
@@ -34,8 +39,12 @@
   @media (min-width: @tablet-width) {
     line-height: 27px;
     font-size: 21px;
-    width: 129px;
+    width: 150.5px;
     margin: 39px auto 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 47px auto 12px;
   }
 }
 
@@ -62,15 +71,44 @@
   @media (min-width: @tablet-width) {
     width: 192px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+  }
 }
 
-.advantages__photo {
-  object-fit: cover;
-  display: block;
+.advantages__photo-block {
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 260px;
 
   @media (min-width: @tablet-width) {
     width: 512px;
     height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.advantages__photo {
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  width: 320px;
+  height: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 400px;
+    top: -68px;
   }
 }
 
@@ -78,6 +116,10 @@
   &:nth-of-type(2) {
     .advantages__title {
       margin-top: 39px;
+
+      @media (min-width: @tablet-width) {
+        margin-top: 42px;
+      }
     }
 
     .advantages__description {
@@ -90,9 +132,21 @@
   &:nth-of-type(5) {
     background-color: #eeeeee;
 
+    @media (min-width: @tablet-width) {
+      width: 256px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 400px;
+    }
+
     .advantages__title {
-      margin-top: 24px;
+      margin-top: 23px;
       color: #000000;
+
+      @media (min-width: @tablet-width) {
+        margin-top: 41px;
+      }
     }
 
     .advantages__number {
@@ -102,23 +156,40 @@
     .advantages__description {
       color: #333333;
       padding-bottom: 24px;
-      width: 192px;
+
+      @media (min-width: @tablet-width) {
+        padding-bottom: 42px;
+        width: 192px;
+      }
     }
   }
 
-  &:nth-of-type(3),
-  &:nth-of-type(4) {
-    .advantages__description {
-      border-bottom: 1px solid #d6d6d6;
+  @media (max-width: @mobile-width-only) {
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      .advantages__description {
+        border-bottom: 1px solid #d6d6d6;
+        width: 250px;
+        padding-left: 17px;
+        padding-right: 17px;
+      }
     }
-  }
 
-  &:nth-of-type(3) {
-    padding-top: 3px;
-  }
+    &:nth-of-type(3) {
+      padding-top: 3px;
+    }
 
-  &:nth-of-type(5) {
-    padding-bottom: 3px;
+    &:nth-of-type(5) {
+      padding-bottom: 2px;
+
+      .advantages__title {
+        margin-top: 27px;
+      }
+
+      .advantages__description {
+        width: 250px;
+      }
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -133,12 +204,79 @@
         grid-area: text;
       }
 
-      .advantages__photo {
+      .advantages__photo-block {
         grid-area: photo;
       }
 
       .advantages_additional-list {
         grid-area: additional;
+      }
+    }
+
+    &:nth-of-type(2) {
+      display: grid;
+      grid-template-columns: 1fr 256px;
+      grid-template-areas: "photo text";
+
+      .advantages__text {
+        grid-area: text;
+      }
+
+      .advantages__photo-block {
+        grid-area: photo;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .advantages__description {
+        width: 148px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .advantages__description {
+        width: 175px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-of-type(1) {
+      grid-template-columns: 400px 1fr;
+    }
+
+    &:nth-of-type(2) {
+      grid-template-columns: 1fr 400px;
+
+      .advantages__title {
+        margin-top: 51px;
+      }
+
+      .advantages__description {
+        width: 230px;
+      }
+
+      .advantages__photo {
+        top: -15px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .advantages__description {
+        width: 315px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .advantages__description {
+        width: 270px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .advantages__description {
+        width: 290px;
+        padding-bottom: 63px;
       }
     }
   }
