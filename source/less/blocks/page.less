@@ -19,9 +19,13 @@
   width: 320px;
   margin: 0 auto;
   background-color: #ffffff;
-}
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 
-img {
-  max-width: 100%;
-  object-fit: contain;
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }

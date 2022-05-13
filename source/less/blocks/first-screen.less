@@ -6,11 +6,31 @@
   background-repeat: no-repeat;
   padding-top: 90px;
   padding-bottom: 1px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+  }
 }
 
 .first-screen__header-text {
   display: block;
   margin: 0 auto 84px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 459.5px;
+    height: 350px;
+    margin-bottom: 89px;
+  }
 }
 
 .first-screen__header-divider {
@@ -19,9 +39,25 @@
 }
 
 .first-screen__text-heading {
-  margin: 32px auto 35px;
+  margin: 35px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 47.5px auto 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+  }
 }
 
 .first-screen__text-bottom {
   margin: 0 auto 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
