@@ -15,14 +15,14 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="main-nav__list site-list visually-hidden">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
                 Главная
               </a>
           </li>
-          <li class="site-list__item" href="catalog.html">
-            <a class="site-list__link">
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
                 Фото и видео
               </a>
           </li>
@@ -53,9 +53,8 @@
       </section>
       <h3 class="visually-hidden">Форма отзыва.</h3>
       <form class="feedback" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="feedback__wrapper">
           <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title">Представьтесь:</legend>
+            <legend class="filter-group__title"><span>Представьтесь:</span></legend>
             <label>
               <span class="filter-group__input-title">Имя*:</span>
               <input class="filter-group__text-input" type="text" value="Пётр" name="name">
@@ -70,7 +69,7 @@
             </label>
           </fieldset>
           <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title">Контактная информация:</legend>
+            <legend class="filter-group__title"><span>Контактная информация:</span></legend>
             <label>
               <span class="filter-group__input-title">Контактный телефон*:</span>
               <div class="filter-group__input-icon-phone">
@@ -85,7 +84,7 @@
             </label>
           </fieldset>
           <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title">Ваше общее впечатление:</legend>
+            <legend class="filter-group__title"><span>Ваше общее впечатление:</span></legend>
             <ul class="filter-group__list">
               <li class="filter-group__item">
                 <label class="filter-group__label">
@@ -111,7 +110,7 @@
             </ul>
           </fieldset>
           <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title">Посещенные достопримечательности:</legend>
+            <legend class="filter-group__title"><span>Посещенные достопримечательности:</span></legend>
             <ul class="filter-group__list">
               <li class="filter-group__item">
                 <label class="filter-group__label">
@@ -144,14 +143,13 @@
             </ul>
           </fieldset>
           <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title">Опишите свои эмоции:</legend>
+            <legend class="filter-group__title"><span>Опишите свои эмоции:</span></legend>
             <textarea class="filter-group__text-emotions" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5"></textarea>
           </fieldset>
           <div class="feedback__submit">
             <button class="feedback__button button" type="submit">Отправить отзыв</button>
             <span class="feedback__explanation">* — обязательные поля</span>
           </div>
-        </div>
       </form>
     </main>
     <footer class="main-footer">
