@@ -100,10 +100,10 @@
   .filter-group__telephone-input,
   .filter-group__email-input {
     padding-right: 74px;
-  }
 
-  &::placeholder {
-    color: rgba(0, 0, 0, 0.3);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .filter-group__input-icon-phone {
@@ -419,5 +419,38 @@
         margin-bottom: 48px;
       }
     }
+  }
+}
+
+.filter-group__text-input,
+.filter-group__telephone-input,
+.filter-group__email-input,
+.filter-group__input-mark-radio,
+.filter-group__input-mark-chekbox,
+.filter-group__text-emotions {
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.filter-group__text-input,
+.filter-group__telephone-input,
+.filter-group__email-input,
+.filter-group__text-emotions {
+  &:active,
+  &:focus {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 }
