@@ -19,14 +19,29 @@
   }
 }
 
+.social__item {
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
 .social__link {
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
-  background-color: #81b3d2;
   display: block;
   width: 48px;
   height: 48px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vkontakte {
