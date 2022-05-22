@@ -48,7 +48,7 @@
         <h1 class="visually-hidden">Страница формы отзыва.</h1>
         <div class="secondary-first-screen__header">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/sedona-text-desktop.svg" width="460" height="80">
+            <source media="(min-width: 1200px)" srcset="img/sedona-text-desktop.svg">
             <img class="secondary-first-screen__header-text" src="./img/sedona-text.svg" width="229" height="39" alt="Надпись Седона.">
           </picture>
           <div class="secondary-first-screen__header-divider divider"></div>
@@ -79,15 +79,15 @@
             <legend class="filter-group__title"><span>Контактная информация:</span></legend>
             <label>
               <span class="filter-group__input-title">Контактный телефон*:</span>
-              <div class="filter-group__input-icon-phone">
+              <span class="filter-group__input-icon-phone">
                 <input class="filter-group__telephone-input" placeholder="Введите телефон" type="tel" name="telephone" required>
-              </div>
+              </span>
             </label>
             <label>
               <span class="filter-group__input-title">Электронная почта*:</span>
-              <div class="filter-group__input-icon-mail">
+              <span class="filter-group__input-icon-mail">
                 <input class="filter-group__email-input" placeholder="Введите e-mail" type="email" name="email" required>
-              </div>
+              </span>
             </label>
           </fieldset>
           <fieldset class="feedback__filter filter-group">
@@ -127,7 +127,7 @@
                 </label>
               </li>
               <li>
-                <labe class="filter-group__label" l>
+                <label class="filter-group__label">
                   <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="mountain-bell" checked>
                   <span class="filter-group__input-mark-chekbox"></span>
                   <span class="filter-group__input-explanation">Гора-Колокол</span>
@@ -182,8 +182,8 @@
         <h2 class="visually-hidden">Сайт сделан в HTML Академии.</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">Разработано </b>
-          <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="htmlacademy" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="htmlacademy.">
+            <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
           <span class="visually-hidden">HTML Academy.</span>
         </a>

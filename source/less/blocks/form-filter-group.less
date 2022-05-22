@@ -79,7 +79,7 @@
   .filter-group__telephone-input,
   .filter-group__email-input,
   .filter-group__text-emotions {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -108,6 +108,7 @@
 
   .filter-group__input-icon-phone {
     position: relative;
+    display: block;
 
     &::placeholder {
       color: rgba(0, 0, 0, 0.3);
@@ -130,6 +131,7 @@
 
   .filter-group__input-icon-mail {
     position: relative;
+    display: block;
 
     &::after {
       content: "";
@@ -316,7 +318,7 @@
 
     &:nth-child(3) {
       .filter-group__title {
-        margin-bottom: 14px;
+        margin-bottom: 28px;
 
         .filter-group__title-strip();
       }
