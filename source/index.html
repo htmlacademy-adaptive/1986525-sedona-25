@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -43,7 +47,7 @@
       <section class="first-screen">
         <h1 class="visually-hidden">Городок Седона.</h1>
         <div class="first-screen__header">
-          <img class="first-screen__header-text" src="./img/welcome-text.svg" width="282" height="214" alt="Welcome. To the gargeous. Sedona - Because the Grand Canyon sucks.">
+          <img class="first-screen__header-text" src="img/welcome-text.svg" width="282" height="214" alt="Welcome. To the gargeous. Sedona - Because the Grand Canyon sucks.">
           <div class="first-screen__header-divider divider"></div>
         </div>
         <div class="first-screen__text">
@@ -61,9 +65,11 @@
               <p class="advantages__number">— №1 —</p>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="advantages__photo-block">
-              <img class="advantages__photo" src="./img/sedona-sity.jpg" width="800" height="400" alt="Городок «Седона».">
-            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona-sity-desktop.jpg 1x, img/sedona-sity-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="img/sedona-sity-tablet.jpg 1x, img/sedona-sity-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="advantages__photo" src="img/sedona-sity-phone.jpg" srcset="img/sedona-sity-phone@2x.jpg 2x" width="320" height="260" alt="Городок «Седона».">
+            </picture>
             <ul class="advantages_additional-list additional-list">
               <li class="additional-list__item">
                 <div class="additional-list__icon-home"></div>
@@ -88,9 +94,11 @@
               <p class="advantages__number">— №2 —</p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantages__photo-block">
-              <img class="advantages__photo" src="./img/devils-bridge.jpg" width="800" height="400" alt="Мост дьявола.">
-            </div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="advantages__photo" src="img/devils-bridge-phone.jpg" srcset="img/devils-bridge-phone@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+            </picture>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Небольшая площадь</h3>
@@ -117,7 +125,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте.</h2>
-        <img class="map__photo" src="./img/map.png" width="320" height="350" alt="Городок «Седона» на карте.">
+        <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1183055.4483047407!2d-111.66415346786145!3d35.0127154242086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2s!4v1653171357608!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -141,7 +149,7 @@
       </section>
       <section class="main-footer__copyright copyright">
         <h2 class="visually-hidden">Сайт сделан в HTML Академии.</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">Разработано </b>
           <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="htmlacademy" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />

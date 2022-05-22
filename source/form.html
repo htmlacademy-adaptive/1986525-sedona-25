@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header">
-      <a>
+      <a href="index.html">
         <img class="main-header__logo logo" src="img/logotype-sedona.svg" width="185" height="96" alt="Логотип «Седона».">
       </a>
       <nav class="main-nav">
@@ -43,7 +47,10 @@
       <section class="secondary-first-screen">
         <h1 class="visually-hidden">Страница формы отзыва.</h1>
         <div class="secondary-first-screen__header">
-          <img class="secondary-first-screen__header-text" src="./img/sedona-text.svg" width="229" height="39" alt="Надпись Седона.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/sedona-text-desktop.svg" width="460" height="80">
+            <img class="secondary-first-screen__header-text" src="./img/sedona-text.svg" width="229" height="39" alt="Надпись Седона.">
+          </picture>
           <div class="secondary-first-screen__header-divider divider"></div>
         </div>
         <div class="secondary-first-screen__text">
@@ -57,11 +64,11 @@
             <legend class="filter-group__title"><span>Представьтесь:</span></legend>
             <label>
               <span class="filter-group__input-title">Имя*:</span>
-              <input class="filter-group__text-input" type="text" value="Пётр" name="name">
+              <input class="filter-group__text-input" type="text" value="Пётр" name="name" required>
             </label>
             <label>
               <span class="filter-group__input-title">Фамилия*:</span>
-              <input class="filter-group__text-input" type="text" value="Пустота" name="surname">
+              <input class="filter-group__text-input" type="text" value="Пустота" name="surname" required>
             </label>
             <label>
               <span class="filter-group__input-title">Отчество:</span>
@@ -73,13 +80,13 @@
             <label>
               <span class="filter-group__input-title">Контактный телефон*:</span>
               <div class="filter-group__input-icon-phone">
-                <input class="filter-group__telephone-input" placeholder="Введите телефон" type="tel" name="telephone">
+                <input class="filter-group__telephone-input" placeholder="Введите телефон" type="tel" name="telephone" required>
               </div>
             </label>
             <label>
               <span class="filter-group__input-title">Электронная почта*:</span>
               <div class="filter-group__input-icon-mail">
-                <input class="filter-group__email-input" placeholder="Введите e-mail" type="email" name="email">
+                <input class="filter-group__email-input" placeholder="Введите e-mail" type="email" name="email" required>
               </div>
             </label>
           </fieldset>
@@ -173,7 +180,7 @@
       </section>
       <section class="main-footer__copyright copyright">
         <h2 class="visually-hidden">Сайт сделан в HTML Академии.</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">Разработано </b>
           <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" width="27" height="34" role="img" aria-label="htmlacademy" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
@@ -184,6 +191,20 @@
     </footer>
   </div>
 
+  <div class="modal modal--close">
+    <div class="modal__succes modal__succes--close">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="modal__button-container">
+        <button class="modal__button button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal__error modal__error--close">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button" type="button">Ok</button>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>
