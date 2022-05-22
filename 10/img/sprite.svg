@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol viewBox="0 0 27 34" id="logo">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+  </symbol>
+  <symbol viewBox="0 0 48 55" id="video-button">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z"/>
+  </symbol>
+  <symbol viewBox="0 0 23 21" id="like">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="m13 3.8-.7 3-.6 2.6h9.1v2.2l-3 7.3H8.4V8.4L13 3.8ZM2 10.5v8.4-8.4ZM13.9 0 6.9 7c-.4.2-.6.8-.6 1.4v10.5c0 1.2 1 2.1 2 2.1h9.5a2 2 0 0 0 1.9-1.3l3-7.4c.2-.2.2-.5.2-.8v-2h.1c0-1.2-1-2.2-2-2.2h-6.7l1-4.8v-.3c0-.4-.1-.8-.4-1.2l-1.1-1ZM4.2 8.4H0V21h4.2V8.4Z"/>
+  </symbol>
+</svg>
