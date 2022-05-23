@@ -9,7 +9,7 @@
 
   @media (min-width: @tablet-width) {
     flex-flow: row;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
   }
 }
 
@@ -105,10 +105,8 @@
 
 .additional-list__icon() {
   grid-area: grid-icon;
-  width: 47px;
-  background-position: top 22px left;
-  background-size: auto;
-  background-repeat: no-repeat;
+  width: 40px;
+  padding-right: 7px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
@@ -117,40 +115,55 @@
 
 .additional-list__icon-home {
   .additional-list__icon;
-  background-image: url("../img/icon-home.svg");
+  margin-top: 23px;
 
   @media (min-width: @tablet-width) {
+    margin-right: 84px;
     margin-top: 56px;
-    background-position: top;
-    background-size: 77px 78px;
-    width: 80px;
+    width: 75px;
     height: 80px;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 157px;
   }
 }
 
 .additional-list__icon-food {
   .additional-list__icon;
-  background-image: url("../img/icon-food.svg");
+  margin-top: 22px;
 
   @media (min-width: @tablet-width) {
+    margin-right: 84px;
     margin-top: 56px;
-    background-position: center left;
-    background-size: 76px 78px;
-    width: 78px;
-    height: 80px;
+    width: 76px;
+    height: 82px;
+    margin-bottom: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 77px;
+    height: 83px;
+    margin-bottom: -5px;
+    margin-right: 155px;
   }
 }
 
 .additional-list__icon-gift {
   .additional-list__icon;
-  background-image: url("../img/icon-gift.svg");
+  margin-top: 21px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 56px;
-    background-position: bottom 2px left 1px;
-    background-size: 79.5px 78.5px;
-    width: 85px;
+    margin-right: 90px;
+    margin-top: 55px;
+    width: 64px;
     height: 80px;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 163px;
   }
 }
 
