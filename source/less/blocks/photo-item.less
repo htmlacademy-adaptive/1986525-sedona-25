@@ -17,6 +17,15 @@
   .photo-item__image {
     margin-bottom: 15px;
     display: block;
+
+    @media (min-width: @tablet-width) {
+      width: 324px;
+      height: 267px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 400px;
+    }
   }
 
   .photo-item__title {
@@ -134,6 +143,19 @@
 
       .photo-item__like-amount {
         color: #ffffff;
+      }
+    }
+  }
+
+  &:nth-child(1) {
+    .photo-item__image {
+      @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 400px;
+      }
+
+      @media (min-width: @desktop-width) {
+        width: 1200px;
       }
     }
   }
