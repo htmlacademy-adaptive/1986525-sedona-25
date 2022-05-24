@@ -13,7 +13,7 @@
   text-decoration: none;
 
   @media (min-width: @desktop-width) {
-    margin-right: -16px;
+    margin-right: 11px;
   }
 
   &:hover {
@@ -39,4 +39,13 @@
   color: #000000;
   margin-right: 12.5px;
   margin-left: 2px;
+  max-width: 140px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 200px;
+  }
 }
