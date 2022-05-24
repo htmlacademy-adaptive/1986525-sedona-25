@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple.png">
@@ -36,7 +36,7 @@
               </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="https://htmlacademy.ru/">
                 HTML Academy
               </a>
           </li>
@@ -66,25 +66,35 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/sedona-sity-desktop.webp 1x, img/sedona-sity-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/sedona-sity-tablet.webp 1x, img/sedona-sity-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/sedona-sity-phone.webp 1x, img/sedona-sity-phone@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/sedona-sity-desktop.jpg 1x, img/sedona-sity-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/sedona-sity-tablet.jpg 1x, img/sedona-sity-tablet@2x.jpg 2x">
               <img class="advantages__photo" src="img/sedona-sity-phone.jpg" srcset="img/sedona-sity-phone@2x.jpg 2x" width="320" height="260" alt="Городок «Седона».">
             </picture>
             <ul class="advantages_additional-list additional-list">
               <li class="additional-list__item">
-                <div class="additional-list__icon-home"></div>
+                <svg class="additional-list__icon-home" width="37" height="40" role="img" aria-label="Дом.">
+                  <use xlink:href="img/sprite.svg#icon-house"></use>
+                </svg>
                 <h4 class="additional-list__title">Жилье</h4>
                 <p class="additional-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="additional-list__item">
-                <div class="additional-list__icon-food"></div>
+                <svg class="additional-list__icon-food" width="40" height="40" role="img" aria-label="Бургер.">
+                  <use xlink:href="img/sprite.svg#icon-burger"></use>
+                </svg>
                 <h4 class="additional-list__title">Еда</h4>
                 <p class="additional-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="additional-list__item">
-                <div class="additional-list__icon-gift"></div>
+                <svg class="additional-list__icon-gift" width="40" height="40" role="img" aria-label="Подарок.">
+                  <use xlink:href="img/sprite.svg#icon-gift"></use>
+                </svg>
                 <h4 class="additional-list__title">Сувениры</h4>
-                <p class="additional-list__description">Не только китайского,<br class="additional-list__description-br"> но и местного производства!</p>
+                <p class="additional-list__description">Не только китайского,
+                  <br class="additional-list__description-br"> но и местного производства!</p>
               </li>
             </ul>
           </li>
@@ -95,6 +105,9 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp 1x, img/devils-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp 1x, img/devils-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/devils-bridge-phone.webp 1x, img/devils-bridge-phone@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
               <img class="advantages__photo" src="img/devils-bridge-phone.jpg" srcset="img/devils-bridge-phone@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
@@ -120,7 +133,8 @@
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы.</h2>
         <p class="hotel-search__text-heading text-heading">Заинтересовались?</p>
-        <p class="hotel-search__text-bottom text-bottom">Укажите предполагаемые даты поездки,<br class="text-bottom-br"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="hotel-search__text-bottom text-bottom">Укажите предполагаемые даты поездки,
+          <br class="text-bottom-br"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search__button button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">
@@ -137,13 +151,28 @@
         <h2 class="visually-hidden">Мы в социальных сетях.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="vk.">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a>
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="telegram.">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Телеграме.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="youtube.">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Ютубе.</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -159,7 +188,6 @@
       </section>
     </footer>
   </div>
-
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

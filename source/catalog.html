@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple.png">
@@ -31,12 +31,12 @@
               </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link"  href="form.html">
+            <a class="site-list__link" href="form.html">
                 Форма отзыва
               </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="https://htmlacademy.ru/">
                 HTML Academy
               </a>
           </li>
@@ -81,13 +81,16 @@
                   </svg>
                   <span class="photo-item__like-amount">1350</span>
                 </div>
-            </div>
+              </div>
             </div>
           </li>
           <li class="catalog-photo__item photo-item">
             <div class="photo-item__wraper">
               <a href="#" class="photo-item__full-image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/greenery-desktop.webp 1x, img/greenery-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/greenery-tablet.webp 1x, img/greenery-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/greenery-phone.webp 1x, img/greenery-phone@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/greenery-desktop.jpg 1x, img/greenery-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/greenery-tablet.jpg 1x, img/greenery-tablet@2x.jpg 2x">
                   <img class="photo-item__image" src="img/greenery-phone.jpg" srcset="img/greenery-phone@2x.jpg 2x" width="280" height="280" alt="Кактусы на фоне гор.">
@@ -109,6 +112,9 @@
             <div class="photo-item__wraper">
               <a href="#" class="photo-item__full-image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-north-desktop.webp 1x, img/road-north-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/road-north-tablet.webp 1x, img/road-north-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/road-north-phone.webp 1x, img/road-north-phone@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/road-north-desktop.jpg 1x, img/road-north-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/road-north-tablet.jpg 1x, img/road-north-tablet@2x.jpg 2x">
                   <img class="photo-item__image" src="img/road-north-phone.jpg" srcset="img/road-north-phone@2x.jpg 2x" width="280" height="280" alt="Дорога в лесу.">
@@ -130,6 +136,9 @@
             <div class="photo-item__wraper">
               <a href="#" class="photo-item__full-image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-catalog-desktop.webp 1x, img/devils-bridge-catalog-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-catalog-tablet.webp 1x, img/devils-bridge-catalog-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/devils-bridge-catalog-phone.webp 1x, img/devils-bridge-catalog-phone@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/devils-bridge-catalog-desktop.jpg 1x, img/devils-bridge-catalog-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/devils-bridge-catalog-tablet.jpg 1x, img/devils-bridge-catalog-tablet@2x.jpg 2x">
                   <img class="photo-item__image" src="img/devils-bridge-catalog-phone.jpg" srcset="img/devils-bridge-catalog-phone@2x.jpg 2x" width="280" height="280" alt="Дорога и закат.">
@@ -158,6 +167,9 @@
               <p class="video-item__text-bottom text-bottom">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
               <div class="video-item__image-container">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-sedona-desktop.webp 1x, img/video-sedona-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-sedona-tablet.webp 1x, img/video-sedona-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video-sedona-phone.webp 1x, img/video-sedona-phone@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/video-sedona-desktop.jpg 1x, img/video-sedona-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-sedona-tablet.jpg 1x, img/video-sedona-tablet@2x.jpg 2x">
                   <img class="video-item__image" src="img/video-sedona-phone.jpg" srcset="img/video-sedona-phone@2x.jpg 2x" width="280" height="177" alt="Видео о Седоне.">
@@ -180,13 +192,28 @@
         <h2 class="visually-hidden">Мы в социальных сетях.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="vk.">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a>
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="telegram.">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Телеграме.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="youtube.">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Ютубе.</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -201,8 +228,7 @@
         </a>
       </section>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </div>
 </body>
 </html>

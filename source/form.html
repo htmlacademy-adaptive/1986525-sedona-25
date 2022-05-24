@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple.png">
@@ -36,7 +36,7 @@
               </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="https://htmlacademy.ru/">
                 HTML Academy
               </a>
           </li>
@@ -60,103 +60,103 @@
       </section>
       <h3 class="visually-hidden">Форма отзыва.</h3>
       <form class="feedback" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title"><span>Представьтесь:</span></legend>
-            <label>
-              <span class="filter-group__input-title">Имя*:</span>
-              <input class="filter-group__text-input" type="text" value="Пётр" name="name" required>
-            </label>
-            <label>
-              <span class="filter-group__input-title">Фамилия*:</span>
-              <input class="filter-group__text-input" type="text" value="Пустота" name="surname" required>
-            </label>
-            <label>
-              <span class="filter-group__input-title">Отчество:</span>
-              <input class="filter-group__text-input" type="text" value="Викторович" name="patronymic">
-            </label>
-          </fieldset>
-          <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title"><span>Контактная информация:</span></legend>
-            <label>
-              <span class="filter-group__input-title">Контактный телефон*:</span>
-              <span class="filter-group__input-icon-phone">
+        <fieldset class="feedback__filter filter-group">
+          <legend class="filter-group__title"><span>Представьтесь:</span></legend>
+          <label>
+            <span class="filter-group__input-title">Имя*:</span>
+            <input class="filter-group__text-input" type="text" value="Пётр" name="name" required>
+          </label>
+          <label>
+            <span class="filter-group__input-title">Фамилия*:</span>
+            <input class="filter-group__text-input" type="text" value="Пустота" name="surname" required>
+          </label>
+          <label>
+            <span class="filter-group__input-title">Отчество:</span>
+            <input class="filter-group__text-input" type="text" value="Викторович" name="patronymic">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__filter filter-group">
+          <legend class="filter-group__title"><span>Контактная информация:</span></legend>
+          <label>
+            <span class="filter-group__input-title">Контактный телефон*:</span>
+            <span class="filter-group__input-icon-phone">
                 <input class="filter-group__telephone-input" placeholder="Введите телефон" type="tel" name="telephone" required>
               </span>
-            </label>
-            <label>
-              <span class="filter-group__input-title">Электронная почта*:</span>
-              <span class="filter-group__input-icon-mail">
+          </label>
+          <label>
+            <span class="filter-group__input-title">Электронная почта*:</span>
+            <span class="filter-group__input-icon-mail">
                 <input class="filter-group__email-input" placeholder="Введите e-mail" type="email" name="email" required>
               </span>
-            </label>
-          </fieldset>
-          <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title"><span>Ваше общее впечатление:</span></legend>
-            <ul class="filter-group__list">
-              <li class="filter-group__item">
-                <label class="filter-group__label">
-                  <input class="filter-group__radio-input visually-hidden" type="radio" name="feedback-opinion" value="positive" checked>
-                  <span class="filter-group__input-mark-radio"></span>
-                  <span class="filter-group__input-explanation">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="filter-group__item">
-                <label class="filter-group__label">
-                  <input class="filter-group__radio-input visually-hidden" type="radio" name="feedback-opinion" value="negative">
-                  <span class="filter-group__input-mark-radio"></span>
-                  <span class="filter-group__input-explanation">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="filter-group__item">
-                <label class="filter-group__label">
-                  <input class="filter-group__radio-input visually-hidden" type="radio" name="feedback-opinion" value="no-opinion">
-                  <span class="filter-group__input-mark-radio"></span>
-                  <span class="filter-group__input-explanation">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title"><span>Посещенные достопримечательности:</span></legend>
-            <ul class="filter-group__list">
-              <li class="filter-group__item">
-                <label class="filter-group__label">
-                  <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="devil-bridge" checked>
-                  <span class="filter-group__input-mark-chekbox"></span>
-                  <span class="filter-group__input-explanation">Мост Дьявола</span>
-                </label>
-              </li>
-              <li>
-                <label class="filter-group__label">
-                  <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="mountain-bell" checked>
-                  <span class="filter-group__input-mark-chekbox"></span>
-                  <span class="filter-group__input-explanation">Гора-Колокол</span>
-                  </label>
-              </li>
-              <li>
-                <label class="filter-group__label">
-                  <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="slide-park" checked>
-                  <span class="filter-group__input-mark-chekbox"></span>
-                  <span class="filter-group__input-explanation">Слайд-парк</span>
-                </label>
-              </li>
-              <li>
-                <label class="filter-group__label">
-                  <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="red-rocks">
-                  <span class="filter-group__input-mark-chekbox"></span>
-                  <span class="filter-group__input-explanation">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="feedback__filter filter-group">
-            <legend class="filter-group__title"><span>Опишите свои эмоции:</span></legend>
-            <textarea class="filter-group__text-emotions" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5"></textarea>
-          </fieldset>
-          <div class="feedback__submit">
-            <button class="feedback__button button" type="submit">Отправить отзыв</button>
-            <span class="feedback__explanation">* — обязательные поля</span>
-          </div>
+          </label>
+        </fieldset>
+        <fieldset class="feedback__filter filter-group">
+          <legend class="filter-group__title"><span>Ваше общее впечатление:</span></legend>
+          <ul class="filter-group__list">
+            <li class="filter-group__item">
+              <label class="filter-group__label">
+                <input class="filter-group__radio-input visually-hidden" type="radio" name="feedback-opinion" value="positive" checked>
+                <span class="filter-group__input-mark-radio"></span>
+                <span class="filter-group__input-explanation">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="filter-group__item">
+              <label class="filter-group__label">
+                <input class="filter-group__radio-input visually-hidden" type="radio" name="feedback-opinion" value="negative">
+                <span class="filter-group__input-mark-radio"></span>
+                <span class="filter-group__input-explanation">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="filter-group__item">
+              <label class="filter-group__label">
+                <input class="filter-group__radio-input visually-hidden" type="radio" name="feedback-opinion" value="no-opinion">
+                <span class="filter-group__input-mark-radio"></span>
+                <span class="filter-group__input-explanation">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback__filter filter-group">
+          <legend class="filter-group__title"><span>Посещенные достопримечательности:</span></legend>
+          <ul class="filter-group__list">
+            <li class="filter-group__item">
+              <label class="filter-group__label">
+                <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="devil-bridge" checked>
+                <span class="filter-group__input-mark-chekbox"></span>
+                <span class="filter-group__input-explanation">Мост Дьявола</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-group__label">
+                <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="mountain-bell" checked>
+                <span class="filter-group__input-mark-chekbox"></span>
+                <span class="filter-group__input-explanation">Гора-Колокол</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-group__label">
+                <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="slide-park" checked>
+                <span class="filter-group__input-mark-chekbox"></span>
+                <span class="filter-group__input-explanation">Слайд-парк</span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-group__label">
+                <input class="filter-group__checkbox-input visually-hidden" type="checkbox" name="visited" value="red-rocks">
+                <span class="filter-group__input-mark-chekbox"></span>
+                <span class="filter-group__input-explanation">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback__filter filter-group">
+          <legend class="filter-group__title"><span>Опишите свои эмоции:</span></legend>
+          <textarea class="filter-group__text-emotions" placeholder="Опишите подробно все свои восторги" name="emotions" rows="5"></textarea>
+        </fieldset>
+        <div class="feedback__submit">
+          <button class="feedback__button button" type="submit">Отправить отзыв</button>
+          <span class="feedback__explanation">* — обязательные поля</span>
+        </div>
       </form>
     </main>
     <footer class="main-footer">
@@ -168,13 +168,28 @@
         <h2 class="visually-hidden">Мы в социальных сетях.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте.</span></a>
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="vk.">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме.</span></a>
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="telegram.">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Телеграме.</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе.</span></a>
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" width="24" height="24" role="img" aria-label="youtube.">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Ютубе.</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -190,11 +205,11 @@
       </section>
     </footer>
   </div>
-
   <div class="modal modal--close">
     <div class="modal__succes modal__succes--close">
       <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        <br> В ближайшее время мы опубликуем его на сайте.</p>
       <div class="modal__button-container">
         <button class="modal__button button" type="button">Закрыть окно</button>
       </div>
@@ -205,6 +220,6 @@
       <button class="modal__button button" type="button">Ok</button>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
